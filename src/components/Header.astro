@@ -1,0 +1,201 @@
+---
+const navItems = [
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "Articles", href: "/articles" },
+  { name: "Contact", href: "/contact" },
+  { name: "Download Tax Organizer", href: "/tax-organizer" }
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header>
+  <div class="transparent-header">
+    <div class="tg-header__top">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-md-8">
+            <ul class="tg-header__top-info left-side list-wrap">
+              <li>
+                <i class="far fa-envelope"></i>
+                <a href="mailto:info@valom.com">info@valom.com</a>
+              </li>
+              <li>
+                <i class="far fa-clock"></i>Working: 8.00am - 5.00pm
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-6 col-md-4">
+            <ul class="tg-header__top-right list-wrap">
+              <li>
+                <div class="tg-header__top-links">
+                  <a href="#">Company news</a>
+                  <a href="#">Faq</a>
+                  <a href="#">Contact</a>
+                </div>
+              </li>
+              <li class="tg-header__top-social">
+                <ul class="list-wrap">
+                  <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/" target="_blank">
+                      <svg class="d-block" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.33192 5.92804L13.5438 0H12.3087L7.78328 5.14724L4.16883 0H0L5.46575 7.78353L0 14H1.2351L6.01407 8.56431L9.83119 14H14L8.33192 5.92804ZM6.64027 7.85211L6.08648 7.07704L1.68013 0.909771H3.57718L7.13316 5.88696L7.68694 6.66202L12.3093 13.1316H10.4123L6.64027 7.85211Z" fill="currentColor" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.fa-linkedin.com/" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sticky-header" class="tg-header__area tg-header__area-four">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="tgmenu__wrap">
+              <nav class="tgmenu__nav">
+                <div class="logo">
+                  <a href="/"><img src="/img/logo/IgnitaxLogo-white.png" alt="Logo" /></a>
+                </div>
+                <!-- Desktop Navigation -->
+                <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
+                  <ul class="navigation">
+                    {navItems.map(item => (
+                      <li class={currentPath === item.href ? "active" : ""}>
+                        <a href={item.href}>{item.name}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div class="tgmenu__action d-none d-md-block">
+                  <ul class="list-wrap">
+                    <li>
+                      <a href="/contact" class="btn btn-three menu-tigger">
+                        <span class="btn-text" data-text="Make An Appointment"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mobile-nav-toggler d-lg-none d-inline-flex">
+                  <a href="javascript:void(0)" class="sidebar-btn">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                  </a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu  -->
+  <div class="tgmobile__menu">
+    <nav class="tgmobile__menu-box">
+      <div class="close-btn"><i class="fas fa-times"></i></div>
+      <div class="nav-logo">
+        <a href="/"><img src="/img/logo/logo.svg" alt="Logo" /></a>
+      </div>
+      <div class="tgmobile__menu-outer">
+        <!-- Do not manually render the navigation list here
+             if the theme's JavaScript auto-injects it. -->
+      </div>
+      <div class="tgmobile__menu-bottom">
+        <div class="contact-info">
+          <ul class="list-wrap">
+            <li>Mail: <a href="mailto:info@valom.com">info@valom.com</a></li>
+            <li>Phone: <a href="tel:0123456789">+123 888 9999</a></li>
+          </ul>
+        </div>
+        <div class="social-links">
+          <ul class="list-wrap">
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" target="_blank">
+                <svg class="d-block" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.33192 5.92804L13.5438 0H12.3087L7.78328 5.14724L4.16883 0H0L5.46575 7.78353L0 14H1.2351L6.01407 8.56431L9.83119 14H14L8.33192 5.92804ZM6.64027 7.85211L6.08648 7.07704L1.68013 0.909771H3.57718L7.13316 5.88696L7.68694 6.66202L12.3093 13.1316H10.4123L6.64027 7.85211Z" fill="currentColor" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.whatsapp.com/" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="tgmobile__menu-backdrop"></div>
+  <!-- End Mobile Menu -->
+
+  <!-- offCanvas-menu -->
+  <div class="offCanvas__info">
+    <div class="offCanvas__close-icon menu-close">
+      <button><i class="fas fa-times"></i></button>
+    </div>
+    <div class="appointment-wrap2">
+      <div class="appointment-thumb2 d-lg-block d-none">
+        <img src="/img/others/appointment2-1.png" alt="img" />
+      </div>
+      <div class="row justify-content-end">
+        <div class="col-lg-6">
+          <div class="appointment-form-wrap">
+            <div class="section__title mb-30">
+              <h4 class="title">Make An Appointment</h4>
+            </div>
+            <form action="https://valom-html-demo.vercel.app/mail.php" method="POST" class="appointment__form ajax-contact">
+              <!-- Form fields remain unchanged -->
+              <div class="row gy-20">
+                <!-- (form fields markup here) -->
+              </div>
+              <button type="submit" class="btn mt-30">
+                <span class="btn-text" data-text="Submit Message"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="offCanvas__overly"></div>
+  <!-- offCanvas-menu-end -->
+
+</header>

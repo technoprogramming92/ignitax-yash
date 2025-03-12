@@ -85,6 +85,14 @@
 .ml-2 {
   margin-left: 10px;
 }
+
+.tj {
+  text-align: justify;
+}
+
+.pt-2 {
+  padding-top: 30px !important;
+}
 @media screen and (max-width: 476px) {
   .flex-row {
     flex-direction: column !important;

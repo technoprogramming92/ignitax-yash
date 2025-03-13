@@ -1,0 +1,70 @@
+---
+// No frontmatter needed
+---
+
+<style>
+    /* Popup container covers the entire viewport with a semi-transparent background */
+    .popup-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+    
+    /* Popup content styling */
+    .popup-content {
+      position: relative;
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      max-width: 90%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+  
+    /* Close button styling */
+    .popup-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  
+    /* Button styling */
+    .popup-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #16949c;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
+  
+  <div id="popup" class="popup-container">
+    <div class="popup-content">
+      <button id="popup-close" class="popup-close">&times;</button>
+      <h2>We&apos;ve Partnered with <span style="font-weight: bold;
+      color: #16949c;"><a href="https://www.uncoredigital.com" target="_blank">Uncore Digital!</a></span></h2>
+      <p>
+        Ignitax now focuses on U.S. taxation &amp; accounting, while Uncore Digital handles digital media &amp; social media marketing, website design &amp; development.
+        <br/>Please visit Uncore Digital and explore our services.
+      </p>
+      <a href="https://www.uncoredigital.com" target="_blank" class="popup-btn">Uncore&apos;s website</a>
+    </div>
+  </div>
+  
+
+  

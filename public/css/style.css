@@ -11020,6 +11020,7 @@ blockquote .blockquote-card_title:before {
 .wcu-card .box-icon {
   color: var(--tg-theme-primary);
   margin-bottom: 32px;
+  /* margin-left: 60px; */
 }
 .wcu-card .box-icon img, .wcu-card .box-icon i, .wcu-card .box-icon svg {
   transition: 0.4s;

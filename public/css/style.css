@@ -3816,7 +3816,7 @@ textarea.is-invalid {
 .hero-style1 .sub-title {
   font-size: 16px;
   color: var(--tg-color-white-default);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 0.05em;
   margin-top: -0.5em;
   margin-bottom: 20px;

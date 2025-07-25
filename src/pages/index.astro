@@ -4,6 +4,7 @@ import Popup from "../components/Popup.astro";
 import Hero2 from "../components/homepage/Hero2.astro";
 import Herosection from "../components/homepage/Herosection.astro";
 import Welcome from "../components/homepage/Welcome.astro";
+import Cta from "../components/homepage/Cta.astro";
 import BrandEvolutionSection from "../components/BrandEvolutionSection.astro";
 import Whychooseus from "../components/homepage/Whychooseus.astro";
 ---
@@ -14,6 +15,7 @@ import Whychooseus from "../components/homepage/Whychooseus.astro";
 <MainLayout>
   <Hero2 />
   <Welcome />
+ 
   <!-- <BrandEvolutionSection /> -->
 
     <!-- About Section -->
@@ -139,85 +141,8 @@ import Whychooseus from "../components/homepage/Whychooseus.astro";
     </section>
 
     <!-- Why Should You work with us -->
-
     <Whychooseus />
-    <!-- Team Members Section -->
-    <section
-      class="team-area-3 pt-120 pb-120 overflow-hidden gray-bg position-relative"
-    >
-      <div class="team-bg-shape3-1 d-xl-block d-none">
-        <img src="/img/bg/team-bg-shape3-1.png" alt="img" />
-      </div>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xl-6 col-lg-8">
-            <div class="section__title text-center mb-50">
-              <span class="sub-title text-anim">Team Members</span>
-            </div>
-          </div>
-        </div>
-        <div class="row gy-40 justify-content-center">
-          <div class="flex flex-row justify-evenly">
-            <div class="col-xl-3 col-md-6">
-              <div class="team-card style3">
-                <div class="box-img image-anim">
-                  <span class="thumb">
-                    <img src="/img/team/yash-profile-pic1.png" alt="img" />
-                  </span>
-                  <div class="social-wrap">
-                    <a
-                      target="_blank"
-                      href="https://www.facebook.com/share/1EnbHrWBgR/"
-                      tabindex="-1"><i class="fab fa-facebook-f"></i></a
-                    >
-                    <a
-                      href="https://www.linkedin.com/company/91384526/"
-                      target="_blank"><i class="fab fa-linkedin-in"></i></a
-                    >
-                    <a
-                      target="_blank"
-                      href="https://www.instagram.com/ignitax_"
-                      tabindex="-1"><i class="fab fa-instagram"></i></a
-                    >
-
-                    <a
-                      target="_blank"
-                      href="https://youtube.com/@ea_yash_shah?si=KZ5v5hCSE8IQX27g"
-                      tabindex="-1"><i class="fab fa-youtube"></i></a
-                    >
-                  </div>
-                </div>
-                <div class="team-card-details">
-                  <h4 class="box-title"><a href="#">Yash Shah</a></h4>
-                  <span class="box-text">Enrolled Agent</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6 z ml-2">
-              <h3 style="color:white">EA Yash Shah</h3>
-              <span style="font-weight:bold; color:white;"
-                >Founder, IGNITAX</span
-              >
-              <p>
-                I am Yash Shah, an Enrolled Agent and the founder of IGNITAX.
-              </p>
-              <p>
-                I established IGNITAX to be the strategic support system for
-                U.S. CPA and tax firms. We are a dedicated firm of Enrolled
-                Agents that provides seamless, on-demand tax preparation
-                services, allowing you to scale your capacity instantly during
-                peak seasons.
-              </p>
-              <p>
-                My commitment is to total ownership and reliability. When you
-                partner with us, you get an expert team dedicated to quality,
-                allowing you to grow your practice without the overhead.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+     <Cta />
 
     <!-- About Company -->
     <section class="feature-area-2 pt-120 pb-120 overflow-hidden">

@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    
 
     <!-- CSS Assets -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
@@ -24,7 +23,23 @@
     <link rel="stylesheet" href="/css/flex.css" />
   </head>
   <body class="white-bg">
-	
+    <!--Preloader-->
+    <div id="preloader" class="white-bg">
+      <div id="loader" class="loader">
+        <div class="">
+          <div class="loader-icon">
+            <img src="/img/logo/preloader.gif" alt="Preloader" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Preloader-end -->
+
+    <!-- Scroll-top -->
+    <button class="scroll__top scroll-to-target" data-target="html">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- Scroll-top-end-->
     <slot />
 
     <!-- JS Assets -->
@@ -45,5 +60,3 @@
     <script is:inline src="/js/main.js"></script>
   </body>
 </html>
-
-

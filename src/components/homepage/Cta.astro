@@ -1,60 +1,97 @@
 <!--==============================
     Contact Area
     ==============================-->
-        <section class="contact-area-1 overflow-hidden">
-            <div class="contact-wrap1 smoke5-bg pt-120 pb-120 position-relative">
-                <div class="contact-thumb1 d-xl-block d-none">
-                    <img src="assets/img/others/contact1-1.jpg" alt="img">
-                </div>
-                <div class="container">
-                    <div class="row justify-content-end">
-                        <div class="col-xl-6">
-                            <div class="contact-form-wrap">
-                                <div class="section__title mb-30">
-                                    <h4 class="title">Get A Call From EA</h4>
-                                </div>
-                                <form action="https://valom-html-demo.vercel.app/mail.php" method="POST" class="contact__form ajax-contact">
-                                    <div class="row gy-4">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>First Name*</label>
-                                                <input type="text" class="form-control style-border" name="name" id="name" placeholder="Mark">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Last Name*</label>
-                                                <input type="text" class="form-control style-border" name="name2" id="name2" placeholder="Daniel">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label>Email Address*</label>
-                                                <input type="text" class="form-control style-border" name="email" id="email" placeholder="you@company.com">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label>Phone Number*</label>
-                                                <input type="number" class="form-control style-border" name="number" id="number" placeholder="+1 (555) 123-4567">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label>Message*</label>
-                                                <textarea name="message" placeholder="Type your message here" id="contactForm" class="form-control style-border"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button type="submit" class="btn w-100 mt-30">
-                                        <span class="btn-text" data-text="Get A Call"></span>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<section class="contact-area-1 overflow-hidden">
+  <div class="contact-wrap1 smoke5-bg pt-120 pb-120 position-relative">
+    <div class="contact-thumb1 d-xl-block d-none">
+      <img src="/img/others/contact1-1.jpg" alt="img" />
+    </div>
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-xl-6">
+          <div class="contact-form-wrap">
+            <div class="section__title mb-30">
+              <h4 class="title">Get A Call From EA</h4>
             </div>
-        </section>
-        <!--======== / Contact Section ========-->
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="contact__form ajax-contact"
+            >
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>First Name*</label>
+                    <input
+                      type="hidden"
+                      name="access_key"
+                      value="bc8491c5-d1a9-4e3e-bc0d-b9e572b934d2"
+                    />
+                    <input
+                      type="text"
+                      class="form-control style-border"
+                      name="name"
+                      id="name"
+                      placeholder="Mark"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Last Name*</label>
+                    <input
+                      type="text"
+                      class="form-control style-border"
+                      name="name2"
+                      id="name2"
+                      placeholder="Daniel"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Email Address*</label>
+                    <input
+                      type="text"
+                      class="form-control style-border"
+                      name="email"
+                      id="email"
+                      placeholder="you@company.com"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Phone Number*</label>
+                    <input
+                      type="number"
+                      class="form-control style-border"
+                      name="number"
+                      id="number"
+                      placeholder="+1 (555) 123-4567"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Message*</label>
+                    <textarea
+                      name="message"
+                      placeholder="Type your message here"
+                      id="contactForm"
+                      class="form-control style-border"></textarea>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn w-100 mt-30">
+                <span class="btn-text" data-text="Get A Call"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--======== / Contact Section ========-->
